@@ -1,0 +1,53 @@
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+.products .title {
+  font-size: 40px;
+}
+
+.productsContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.productsContent > div {
+  flex: 0 0 calc((100% - 80px) / 3);
+  max-width: calc((100% - 80px) / 3);
+}
+
+.imgHolder {
+  transition: 1s;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.imgHolder img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  transition: transform 1s;
+}
+
+.imgHolder:hover img {
+  border-radius: 3px;
+  transform: scale(1.1);
+}
+
+.seeMoreBtn {
+  padding: 10px 100px;
+  background-color: var(--main);
+  color: #000;
+  font-weight: 500;
+  border-radius: 3px;
+}

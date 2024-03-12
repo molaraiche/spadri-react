@@ -1,0 +1,35 @@
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+ul li a {
+  font-weight: 400;
+  color: #fff;
+  font-weight: 500;
+}
+ul li a:hover {
+  color: var(--main);
+}
+.cw {
+  display: flex;
+  gap: 20px;
+}
+
+.cw a {
+  border: none;
+  background-color: transparent;
+  color: var(--main);
+  font-size: 24px;
+  cursor: pointer;
+}
