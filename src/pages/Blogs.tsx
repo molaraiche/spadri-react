@@ -32,7 +32,7 @@ const Blogs = () => {
       </h1>
       <div className='blogsContent'>
         {blogs.map((blog) => (
-          <a href={blog.path} key={blog._id}>
+          <a href={`blogs/${blog.path}`} key={blog._id}>
             <img
               src={blog.blogImage}
               width={400}

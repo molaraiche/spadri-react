@@ -1,5 +1,7 @@
 import { productType } from '../types/types';
 import '../styles/productDetails.css';
+import { FaShoppingCart } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 interface ProductDetailsProps {
   product: productType;
 }
@@ -31,8 +33,12 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           </div>
         </div>
         <div className='manageBtn'>
-          <button> Add to cart </button>
-          <button> Add to wishlist </button>
+          <button className='wishBtn'>
+            <FaHeart /> Add to wishlist
+          </button>
+          <button className='cartBtn'>
+            <FaShoppingCart /> Add to cart
+          </button>
         </div>
       </div>
     </div>

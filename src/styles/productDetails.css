@@ -126,8 +126,31 @@ input[type='number'] {
 }
 
 .manageBtn button {
-  padding: 10px 40px;
+  padding: 5px 25px;
   border-radius: 3px;
+  border: 4px solid var(--main);
   background-color: var(--main);
-  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manageBtn button svg {
+  font-size: 24px;
+  margin: 0 5px;
+}
+.manageBtn .wishBtn {
+  background-color: transparent;
+  color: #fff;
+}
+.manageBtn .cartBtn:hover {
+  background-color: transparent;
+  border: 4px solid var(--main);
+  color: #fff;
+}
+.manageBtn .wishBtn:hover {
+  background-color: var(--main);
+  border: 4px solid var(--main);
+  color: #000;
 }
