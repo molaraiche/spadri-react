@@ -49,9 +49,9 @@ const Products = () => {
             ))
           : loaderNumber.id.map((load) => <Loader key={load} />)}
       </div>
-      <a className='seeMoreBtn' href='/shop'>
+      {/* <a className='seeMoreBtn' href='/products'>
         See more
-      </a>
+      </a> */}
     </div>
   );
 };

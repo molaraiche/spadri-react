@@ -42,9 +42,9 @@ const Blogs = () => {
           </a>
         ))}
       </div>
-      <a className='seeMoreBtn' href='/shop'>
+      {/* <a className='seeMoreBtn' href='/blogs'>
         See more
-      </a>
+      </a> */}
     </div>
   );
 };
