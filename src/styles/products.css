@@ -4,12 +4,13 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   gap: 30px;
 }
 
 .products .title {
   font-size: 40px;
+  height: 10vh;
 }
 
 .productsContent {

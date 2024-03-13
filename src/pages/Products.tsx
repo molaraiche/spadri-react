@@ -1,5 +1,6 @@
 'use client';
 
+import Search from '../components/Search';
 import { setProducts } from '../redux/products_slice';
 import { loaderNumber } from '../shared/LoadNumbers';
 import Loader from '../shared/Loader';
@@ -32,6 +33,7 @@ const Products = () => {
       <h1 className='title'>
         <span className='greenit'>Our</span> Products
       </h1>
+      <Search />
       <div className='productsContent'>
         {products.length > 0
           ? products.map((product) => (

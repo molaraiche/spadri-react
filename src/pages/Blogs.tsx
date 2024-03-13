@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBlogs } from '../redux/blogs_slice';
 import axios from 'axios';
+import Search from '../components/Search';
 
 const Blogs = () => {
   const selectBlogs = (state: { blogs: { blogs: blogType[] } }) =>
@@ -30,6 +31,7 @@ const Blogs = () => {
       <h1>
         <span className='greenit'>Our</span> Blogs
       </h1>
+      <Search />
       <div className='blogsContent'>
         {blogs.map((blog) => (
           <a href={`blogs/${blog.path}`} key={blog._id}>

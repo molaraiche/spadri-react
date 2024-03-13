@@ -1,0 +1,41 @@
+.blogDetails {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.blogImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogImg img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.blogTxt {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--main);
+}
+
+.blogTxt h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+.blogTxt p {
+  height: 70vh;
+  color: #fff;
+}

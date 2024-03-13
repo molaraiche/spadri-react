@@ -79,3 +79,29 @@ html {
   font-weight: 600;
   color: #9cff1e;
 }
+
+.searchFrom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.searchFrom input,
+.searchFrom button {
+  height: 35px;
+  outline: none;
+  border: none;
+}
+.searchFrom input {
+  max-width: 600px;
+  width: 100%;
+  padding-left: 5px;
+}
+.searchFrom button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  cursor: pointer;
+  background-color: var(--main);
+}
