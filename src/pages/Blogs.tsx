@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBlogs } from '../redux/blogs_slice';
 import axios from 'axios';
-import Search from '../components/Search';
+import { Link } from 'react-router-dom';
 
 const Blogs = () => {
   const selectBlogs = (state: { blogs: { blogs: blogType[] } }) =>
@@ -31,22 +31,18 @@ const Blogs = () => {
       <h1>
         <span className='greenit'>Our</span> Blogs
       </h1>
-      <Search />
       <div className='blogsContent'>
         {blogs.map((blog) => (
-          <a href={`blogs/${blog.path}`} key={blog._id}>
+          <Link to={`/${blog.path}`} key={blog._id}>
             <img
               src={blog.blogImage}
               width={400}
               height={600}
               alt={blog.description}
             />
-          </a>
+          </Link>
         ))}
       </div>
-      {/* <a className='seeMoreBtn' href='/blogs'>
-        See more
-      </a> */}
     </div>
   );
 };

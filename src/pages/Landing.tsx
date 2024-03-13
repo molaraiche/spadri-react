@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Blogs from './Blogs';
 import Contact from './Contact';
 import Products from './Products';
@@ -14,12 +15,12 @@ const LandingPage = () => {
             </h1>
           </div>
           <div className='heroBtns'>
-            <a href='/shop' className='shopBtn'>
+            <Link to='/shop' className='shopBtn'>
               Shop
-            </a>
-            <a href='/blog' className='blogBtn'>
+            </Link>
+            <Link to='/blog' className='blogBtn'>
               Blog
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 const NotFound = () => {
   return (
     <div className='notFound'>
       <img src='/assets/notFound.png' alt='' />
       <div className='notFoundInfo'>
         <h1>This page those not exist </h1>
-        <a href='/'> Back </a>
+        <Link to='/'> Back </Link>
       </div>
     </div>
   );

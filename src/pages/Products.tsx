@@ -1,6 +1,4 @@
-'use client';
-
-import Search from '../components/Search';
+import { Link } from 'react-router-dom';
 import { setProducts } from '../redux/products_slice';
 import { loaderNumber } from '../shared/LoadNumbers';
 import Loader from '../shared/Loader';
@@ -33,12 +31,11 @@ const Products = () => {
       <h1 className='title'>
         <span className='greenit'>Our</span> Products
       </h1>
-      <Search />
       <div className='productsContent'>
         {products.length > 0
           ? products.map((product) => (
-              <a
-                href={`products/${product.path}`}
+              <Link
+                to={`/${product.path}`}
                 className='imgHolder'
                 key={product._id}>
                 <img
@@ -47,13 +44,10 @@ const Products = () => {
                   width={500}
                   height={400}
                 />
-              </a>
+              </Link>
             ))
           : loaderNumber.id.map((load) => <Loader key={load} />)}
       </div>
-      {/* <a className='seeMoreBtn' href='/products'>
-        See more
-      </a> */}
     </div>
   );
 };
