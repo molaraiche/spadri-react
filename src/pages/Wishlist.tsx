@@ -1,7 +1,7 @@
 import { MdDelete } from 'react-icons/md';
 
 import '../styles/cart.css';
-const Wishlist = () => {
+const Cart = () => {
   return (
     <div className='cart'>
       <h1>
@@ -13,13 +13,14 @@ const Wishlist = () => {
             <th>Product Name</th>
             <th>Product Quantity</th>
             <th>Product Price</th>
+            <th>Product Manage</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Shoe</td>
-            <td>6</td>
-            <td>399</td>
+            <td>- Shoe</td>
+            <td>06</td>
+            <td>399,00</td>
             <td>
               <MdDelete className='DelBtnTable' />
             </td>
@@ -28,7 +29,7 @@ const Wishlist = () => {
       </table>
       <div className='total'>
         <p>
-          Total: <span className='greenit'>{6 * 399}</span>{' '}
+          Total: <span className='totalPrice'>{6 * 399},00</span>
         </p>
       </div>
       <div className='managewc'>
@@ -38,4 +39,4 @@ const Wishlist = () => {
   );
 };
 
-export default Wishlist;
+export default Cart;

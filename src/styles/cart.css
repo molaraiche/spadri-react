@@ -1,0 +1,87 @@
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.cart h1 {
+  height: 10vh;
+  color: #fff;
+}
+
+table {
+  min-height: 20vh;
+  width: 100%;
+  background-color: var(--main);
+  border-collapse: collapse;
+}
+
+.cart thead {
+  width: 100%;
+  height: 40px;
+}
+
+.cart tbody {
+  width: 100%;
+  text-align: center;
+}
+
+thead,
+tbody,
+td,
+th,
+tr {
+  padding: 10px;
+  border-bottom: 1px solid #686868;
+}
+
+.DelBtnTable {
+  cursor: pointer;
+  color: #eb1e25;
+  font-weight: 550;
+  font-size: 24px;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--main);
+  padding: 0 4rem;
+  margin: 10px 0;
+}
+.totalPrice {
+  color: black;
+  margin-left: 40px;
+  font-weight: 800;
+}
+
+.managewc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.managewc button,
+.managewc a {
+  padding: 10px 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border: 2px solid #000;
+  border-radius: 3px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.managewc button:hover {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+}

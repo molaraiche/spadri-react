@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 import ProductDetails from '../components/ProductDetails';
 import { setBlogs } from '../redux/blogs_slice';
 import BlogDetails from '../components/BlogDetails';
+import Checkout from '../components/Checkout';
 
 const SpadriRoutes = () => {
   const selectBlogs = (state: { blogs: { blogs: blogType[] } }) =>
@@ -73,6 +74,7 @@ const SpadriRoutes = () => {
       <Route path='/contact' element={<Contact />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/wishlist' element={<Wishlist />} />
+      <Route path='/checkout/*' element={<Checkout />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
   );
