@@ -1,0 +1,48 @@
+.checkout {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productDetails,
+.paimentInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paimentInfo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productDetails {
+  width: 60%;
+  color: #000;
+  text-align: center;
+}
+.finalPrice {
+  font-weight: 800;
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.finalPrice span {
+  margin-left: 5px;
+}
+.miniNav {
+  display: flex;
+  gap: 40px;
+}
+.miniNav a {
+  color: #fff;
+  font-weight: 550;
+  transition: 0.4s;
+  height: 8vh;
+}
+.miniNav a:hover {
+  color: var(--main);
+}

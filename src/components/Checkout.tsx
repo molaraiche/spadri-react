@@ -1,10 +1,10 @@
 import { MdDelete } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import PaimentRoutes from '../routes/PaimentRoutes';
-
+import '../styles/checkout.css';
 const Checkout = () => {
   return (
-    <div>
+    <div className='checkout'>
       <div className='productDetails'>
         <table>
           <thead>
@@ -26,7 +26,9 @@ const Checkout = () => {
             </tr>
           </tbody>
         </table>
-        <div className='finalPrice'>Finale price: 2199,00</div>
+        <div className='finalPrice'>
+          Finale price: <span className='greenit'> 2199,00 MAD</span>
+        </div>
       </div>
       <div className='paimentInfo'>
         <div className='miniNav'>
