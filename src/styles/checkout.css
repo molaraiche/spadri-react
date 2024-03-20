@@ -40,9 +40,34 @@
 .miniNav a {
   color: #fff;
   font-weight: 550;
-  transition: 0.4s;
+  transition: 1s;
   height: 8vh;
 }
 .miniNav a:hover {
+  color: var(--main);
+}
+
+.visaCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  transition: 1s;
+}
+
+.visaCard input {
+  width: 80%;
+  padding: 8px;
+}
+.personalInfo,
+.bankInfo {
+  display: flex;
+  margin: 5px 0;
+  gap: 5px;
+  width: 90%;
+}
+.activePaypal,
+activeVisa {
   color: var(--main);
 }

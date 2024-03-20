@@ -69,7 +69,7 @@ tr {
 
 .managewc button,
 .managewc a {
-  padding: 10px 50px;
+  padding: 15px 50px;
   background-color: #000;
   color: #fff;
   border: none;
@@ -85,3 +85,4 @@ tr {
   color: #000;
   border: 2px solid #000;
 }
+

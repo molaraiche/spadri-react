@@ -2,7 +2,23 @@ import { MdDelete } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import PaimentRoutes from '../routes/PaimentRoutes';
 import '../styles/checkout.css';
+import { useState } from 'react';
+type activeType = {
+  active: string;
+};
 const Checkout = () => {
+  const [active, setActive] = useState<activeType>({ active: 'downAll' });
+
+  const activateVisa = () => {
+    setActive({
+      active: 'activeVisa',
+    });
+  };
+  const activatePaypal = () => {
+    setActive({
+      active: 'activePaypal',
+    });
+  };
   return (
     <div className='checkout'>
       <div className='productDetails'>
@@ -32,10 +48,18 @@ const Checkout = () => {
       </div>
       <div className='paimentInfo'>
         <div className='miniNav'>
-          <Link to='checkout/visa' className='creditCard'>
+          <Link
+            to='checkout/visa'
+            className='creditCard'
+            id={active}
+            onClick={activateVisa}>
             Visa
           </Link>
-          <Link to='checkout/paypal' className='paypal'>
+          <Link
+            to='checkout/paypal'
+            className='paypal'
+            id={active}
+            onClick={activatePaypal}>
             Paypal
           </Link>
         </div>
