@@ -1,17 +1,23 @@
+import { useState } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
 import '../styles/navbar.css';
-
+import { IoMenu } from 'react-icons/io5';
+import { IoMdClose } from 'react-icons/io';
 import logo from '/assets/logo.png';
 import { Link } from 'react-router-dom';
+type MenuType = {
+  menu: boolean;
+};
 
 const Navbar = () => {
+  const [menu, setMenu] = useState<MenuType>({ menu: true });
   return (
     <header>
       <div className='logoHolder'>
-        <a href='/'>
+        <Link to='/'>
           <img src={logo} alt='Spadri Ecommerce shoes store' />{' '}
-        </a>
+        </Link>
       </div>
       <nav>
         <ul>
@@ -36,6 +42,9 @@ const Navbar = () => {
         <Link to='/wishlist'>
           <FaHeart />
         </Link>
+      </div>
+      <div className='menu'>
+        {menu.menu === true ? <IoMenu /> : <IoMdClose />}
       </div>
     </header>
   );
