@@ -59,7 +59,7 @@ const SpadriRoutes = () => {
       {products.map((product) => (
         <Route
           key={product._id}
-          path={`products/${product.path}`}
+          path={`/${product.path}`}
           element={<ProductDetails product={product} />}
         />
       ))}
@@ -67,7 +67,7 @@ const SpadriRoutes = () => {
       {blogs.map((blog) => (
         <Route
           key={blog._id}
-          path={`blogs/${blog.path}`}
+          path={`/${blog.path}`}
           element={<BlogDetails blog={blog} />}
         />
       ))}

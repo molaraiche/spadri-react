@@ -41,10 +41,10 @@
   color: #fff;
   font-weight: 550;
   transition: 1s;
-  height: 8vh;
 }
 .miniNav a:hover {
   color: var(--main);
+  border-bottom: 2px solid var(--main);
 }
 
 .visaCard {
@@ -54,11 +54,14 @@
   flex-direction: column;
   width: 100%;
   transition: 1s;
+  height: 25vh;
 }
 
 .visaCard input {
   width: 80%;
   padding: 8px;
+  border: none;
+  border-radius: 3px;
 }
 .personalInfo,
 .bankInfo {
@@ -70,4 +73,39 @@
 .activePaypal,
 activeVisa {
   color: var(--main);
+}
+.payBtn {
+  margin: 10px 0;
+}
+.payBtn button {
+  padding: 10px 40px;
+  background-color: var(--main);
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  font-weight: 550;
+  cursor: pointer;
+}
+.paypalPay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+.paypalPay button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003087;
+  color: #fff;
+  font-weight: 600;
+}
+
+.paypalPay button svg {
+  font-size: 18px;
 }
