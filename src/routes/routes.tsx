@@ -17,6 +17,9 @@ import BlogDetails from '../components/BlogDetails';
 import Checkout from '../components/Checkout';
 import Thanks from '../pages/Thanks';
 import Login from '../admin/Login';
+import Dashboard from '../admin/Dashboard';
+import ManageBlogs from '../admin/ManageBlogs';
+import ManageProducts from '../admin/ManageProducts';
 const SpadriRoutes = () => {
   const selectBlogs = (state: { blogs: { blogs: blogType[] } }) =>
     state.blogs.blogs;
@@ -79,6 +82,9 @@ const SpadriRoutes = () => {
       <Route path='*' element={<NotFound />} />
       <Route path='/thanks' element={<Thanks />} />
       <Route path='/admin' element={<Login />} />
+      <Route path='/dashboard/*' element={<Dashboard />} />
+      <Route path='/mp' element={<ManageProducts />} />
+      <Route path='/mb' element={<ManageBlogs />} />
     </Routes>
   );
 };

@@ -55,6 +55,7 @@ const Checkout = () => {
             onClick={activateVisa}>
             Visa
           </Link>
+          
           <Link
             to='checkout/paypal'
             className='paypal'

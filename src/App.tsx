@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <main className='box'>
       <div className='dashHolder'>
-        <Link to='/admin'>Dashboard </Link>
+        <Link to='/dashboard'>Dashboard </Link>
       </div>
       <div className='mainBox'>
         <Navbar />

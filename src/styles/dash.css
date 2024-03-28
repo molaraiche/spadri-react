@@ -1,0 +1,58 @@
+.dashboard {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashLinks {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
+  height: 40vh;
+}
+
+.mp,
+.mb {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  justify-content: center;
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+.mp {
+  background-color: var(--main);
+  color: #000;
+}
+
+.mb {
+  background-color: #000;
+  color: #fff;
+}
+.dashLinks a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 380px) {
+  .dashLinks {
+    flex-direction: column;
+  }
+  .mp,
+  .mb {
+    width: 90%;
+  }
+}
+
+@media (max-width: 210px) {
+  .mp,
+  .mb {
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
