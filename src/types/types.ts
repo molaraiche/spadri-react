@@ -1,5 +1,4 @@
 export type productType = {
-  _id: Key | null | undefined;
   _id: number;
   name: string;
   description: string;

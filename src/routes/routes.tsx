@@ -15,7 +15,8 @@ import ProductDetails from '../components/ProductDetails';
 import { setBlogs } from '../redux/blogs_slice';
 import BlogDetails from '../components/BlogDetails';
 import Checkout from '../components/Checkout';
-
+import Thanks from '../pages/Thanks';
+import Login from '../admin/Login';
 const SpadriRoutes = () => {
   const selectBlogs = (state: { blogs: { blogs: blogType[] } }) =>
     state.blogs.blogs;
@@ -76,6 +77,8 @@ const SpadriRoutes = () => {
       <Route path='/wishlist' element={<Wishlist />} />
       <Route path='/checkout/*' element={<Checkout />} />
       <Route path='*' element={<NotFound />} />
+      <Route path='/thanks' element={<Thanks />} />
+      <Route path='/admin' element={<Login />} />
     </Routes>
   );
 };

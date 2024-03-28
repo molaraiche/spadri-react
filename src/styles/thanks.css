@@ -1,0 +1,42 @@
+.thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+  color: #fff;
+}
+
+.thanks h1 {
+  font-size: 80px;
+  height: 30vh;
+  text-align: center;
+}
+
+.thanks p {
+  height: 20vh;
+  text-align: center;
+}
+.suggestions .products {
+  height: 20vh;
+}
+
+.suggestions .products {
+  min-height: 20vh;
+}
+
+@media (max-width: 942px) {
+  .suggestions .products {
+    min-height: 80vh;
+  }
+}
+@media (max-width: 276px) {
+  .thanks h1 {
+    font-size: 40px;
+    height: 10vh;
+  }
+  .thanks p {
+    height: 10vh;
+    text-align: center;
+  }
+}
