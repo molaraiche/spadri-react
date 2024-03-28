@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .blogs h1 {
   color: #fff;
   height: 10vh;
   font-size: 40px;
+  text-align: center;
 }
 
 .blogsContent {
@@ -19,6 +20,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .blogsContent a {
@@ -38,4 +40,10 @@
 .blogsContent :hover img {
   border-radius: 3px;
   transform: scale(1.1);
+}
+
+@media (max-width: 240px) {
+  .blogs h1 {
+    font-size: 30px;
+  }
 }

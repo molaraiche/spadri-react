@@ -11,6 +11,8 @@
 .products .title {
   font-size: 40px;
   height: 10vh;
+  text-align: center;
+  margin: 5px 0;
 }
 
 .productsContent {
@@ -51,4 +53,10 @@
   color: #000;
   font-weight: 500;
   border-radius: 3px;
+}
+
+@media (max-width: 300px) {
+  .products .title {
+    font-size: 30px;
+  }
 }

@@ -4,6 +4,11 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.logoHolder img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
 
 ul {
   display: flex;

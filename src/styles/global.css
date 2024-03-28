@@ -19,9 +19,7 @@ a {
   color: var(--main);
 }
 
-body {
-  margin: 0 auto;
-  width: 90%;
+.box {
   background: #093028 no-repeat fixed center/cover;
   background: -webkit-linear-gradient(to top, #237a57, #093028) no-repeat fixed
     center/cover;
@@ -30,11 +28,8 @@ body {
 }
 
 .mainBox {
-  background: #093028 no-repeat fixed center/cover;
-  background: -webkit-linear-gradient(to top, #237a57, #093028) no-repeat fixed
-    center/cover;
-  background: linear-gradient(to top, #237a57, #093028) no-repeat fixed
-    center/cover;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .title {

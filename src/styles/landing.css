@@ -30,7 +30,7 @@
 .hero h1 {
   font-size: 80px;
   color: #fff;
-  width: 700px;
+  /* width: 700px; */
 }
 
 .heroImg img {
@@ -88,5 +88,24 @@
   .slogan {
     height: 90vh;
     text-align: center;
+    width: 100%;
+  }
+  .heroTxt h1 {
+    font-size: 50px;
+  }
+  .heroBtns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 200px) {
+  .heroTxt h1 {
+    font-size: 40px;
+  }
+  .heroBtns a {
+    width: 80px;
+    height: 40px;
+    font-weight: 400;
   }
 }

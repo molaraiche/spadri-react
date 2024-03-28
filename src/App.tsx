@@ -8,8 +8,10 @@ import Navbar from './components/Navbar';
 const LandingPage = () => {
   return (
     <main className='box'>
-      <Navbar />
-      <SpadriRoutes />
+      <div className='mainBox'>
+        <Navbar />
+        <SpadriRoutes />
+      </div>
     </main>
   );
 };
