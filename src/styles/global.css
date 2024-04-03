@@ -121,3 +121,14 @@ html {
 .dashHolder a:hover {
   opacity: 0.5;
 }
+@media (max-width: 372px) {
+  .dashHolder {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 224px) {
+  .dashHolder a {
+    padding: 5px 20px;
+  }
+}
