@@ -15,7 +15,7 @@ import ProductDetails from '../components/ProductDetails';
 import { setBlogs } from '../redux/blogs_slice';
 import BlogDetails from '../components/BlogDetails';
 import Checkout from '../components/Checkout';
-import Thanks from '../pages/Thanks';
+import Thanks from '../pages/thanks';
 import Login from '../admin/Login';
 import Dashboard from '../admin/Dashboard';
 import ManageBlogs from '../admin/ManageBlogs';
